@@ -26,12 +26,6 @@ DSA-Python/
 * Hashing (Sets & Dictionaries)
 * Sorting Algorithms
 * Linked Lists
-* Stacks
-* Queues
-* Sliding Window
-* Trees *(Coming Soon)*
-* Graphs *(Coming Soon)*
-* Dynamic Programming *(Coming Soon)*
 
 ## 📖 Solution Format
 
