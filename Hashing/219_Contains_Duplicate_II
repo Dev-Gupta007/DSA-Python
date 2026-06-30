@@ -1,0 +1,33 @@
+"""
+Problem : 219. Contains Duplicate II
+
+Link : https://leetcode.com/problems/contains-duplicate-ii/
+
+Pattern : Hashing
+
+Difficulty : Easy
+
+Approach :
+Use a dictionary to store the latest index of each element.
+If the current element has been seen before and the difference
+between the current index and the previous index is at most k,
+return True. Otherwise, update the latest index and continue.
+
+Time Complexity : O(n)
+Space Complexity : O(n)
+
+"""
+
+class Solution:
+    def containsNearbyDuplicate(self, nums, k):
+        last_seen = {}
+
+        for i in range(len(nums)):
+            if nums[i] in last_seen:
+                j = last_seen[nums[i]]
+                if i - j <= k:
+                    return True
+
+            last_seen[nums[i]] = i
+
+        return False
